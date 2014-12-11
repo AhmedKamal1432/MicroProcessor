@@ -1,0 +1,147 @@
+m255
+K3
+13
+cModel Technology
+d/home/ahmed/Documents/labs/Arch/lab 4 repeat
+Econtrol_store
+Z0 w1417909128
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/ahmed/MicroProcessor
+Z5 8/home/ahmed/MicroProcessor/Control_Store.vhd
+Z6 F/home/ahmed/MicroProcessor/Control_Store.vhd
+l0
+L6
+Va<@QDcCLFg3IB4;hFD0FX0
+!s100 >k79M60UL]bXKO>9GYnZQ0
+Z7 OV;C;10.1d;51
+32
+!i10b 1
+Z8 !s108 1417909140.018297
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Control_Store.vhd|
+Z10 !s107 /home/ahmed/MicroProcessor/Control_Store.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Acontrol_store
+R1
+R2
+R3
+Z13 DEx4 work 13 control_store 0 22 a<@QDcCLFg3IB4;hFD0FX0
+l31
+L13
+Vg<j^naRg>IPjTG4jNN5bI2
+!s100 4[lW`6FnDkz?2fjNneUE21
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Edecoder_2x4
+Z14 w1415145286
+R2
+R3
+R4
+Z15 8/home/ahmed/MicroProcessor/decoder_2x4.vhd
+Z16 F/home/ahmed/MicroProcessor/decoder_2x4.vhd
+l0
+L3
+VA^IBUl<T4>]24m^hC>M6A3
+R7
+32
+Z17 !s108 1417909139.904653
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/decoder_2x4.vhd|
+Z19 !s107 /home/ahmed/MicroProcessor/decoder_2x4.vhd|
+R11
+R12
+!s100 cZJE[fMZVAiBE>jBQhO6c1
+!i10b 1
+Adecoder_2x4
+R2
+R3
+DEx4 work 11 decoder_2x4 0 22 A^IBUl<T4>]24m^hC>M6A3
+l9
+L8
+VEhIWHZMh=RI8UKO01OIa=1
+R7
+32
+R17
+R18
+R19
+R11
+R12
+!s100 oC^E`TO9njdkf2>2[^GWR1
+!i10b 1
+En_register
+Z20 w1415143167
+R2
+R3
+R4
+Z21 8/home/ahmed/MicroProcessor/Register.vhd
+Z22 F/home/ahmed/MicroProcessor/Register.vhd
+l0
+L4
+VIjFITeS3HPn7hjU>J1@Kb2
+R7
+32
+Z23 !s108 1417909139.983788
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Register.vhd|
+Z25 !s107 /home/ahmed/MicroProcessor/Register.vhd|
+R11
+R12
+!s100 0IN2zRKOkjXkc`CcS^hU63
+!i10b 1
+An_register
+R2
+R3
+DEx4 work 10 n_register 0 22 IjFITeS3HPn7hjU>J1@Kb2
+l12
+L11
+VW;G68^BUR>d4`_LmCh8ez2
+!s100 R_ImdK^2W=5CE4S9W2z_W3
+R7
+32
+R23
+R24
+R25
+R11
+R12
+!i10b 1
+Etri_state_buffer
+Z26 w1415143072
+R2
+R3
+R4
+Z27 8/home/ahmed/MicroProcessor/tri_state_buffer.vhd
+Z28 F/home/ahmed/MicroProcessor/tri_state_buffer.vhd
+l0
+L4
+VB8i>nIPEWSaf_BjN@S0LZ0
+R7
+32
+Z29 !s108 1417909139.944208
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/tri_state_buffer.vhd|
+Z31 !s107 /home/ahmed/MicroProcessor/tri_state_buffer.vhd|
+R11
+R12
+!s100 9iOel3`;KUh1EzkA6DP]Y3
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 16 tri_state_buffer 0 22 B8i>nIPEWSaf_BjN@S0LZ0
+l13
+L11
+VQRzNjYTj:XUBUHPIelUeS1
+R7
+32
+R29
+R30
+R31
+R11
+R12
+!s100 _c8d8QNa`zj`A_PG=nTDG1
+!i10b 1
