@@ -1,4 +1,85 @@
-/home/ahmed/MicroProcessor/my_3x8Decoder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_3x8Decoder.vhd
+/home/ahmed/MicroProcessor/B.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/B.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity B
+-- Compiling architecture arch1 of B
+
+} {} {}} /home/ahmed/MicroProcessor/my_nadder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_nadder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_nadder of my_nadder
+
+} {} {}} /home/ahmed/MicroProcessor/decoder_2x4.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/decoder_2x4.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decoder_2x4
+-- Compiling architecture decoder_2x4 of decoder_2x4
+
+} {} {}} /home/ahmed/MicroProcessor/C.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/C.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity C
+-- Compiling architecture arch2 of C
+
+} {} {}} /home/ahmed/MicroProcessor/nReg.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/nReg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nreg
+-- Compiling architecture Arch_my_nreg of my_nreg
+
+} {} {}} /home/ahmed/MicroProcessor/D.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/D.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity D
+-- Compiling architecture arch3 of D
+
+} {} {}} /home/ahmed/MicroProcessor/Control_Store.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Control_Store.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Control_Store
+-- Compiling architecture Control_Store of Control_Store
+
+} {} {}} /home/ahmed/MicroProcessor/ALSU.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/ALSU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALSU
+-- Compiling architecture arch4 of ALSU
+
+} {} {}} /home/ahmed/MicroProcessor/Reg.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Reg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_reg
+-- Compiling architecture a_my_reg of my_reg
+
+} {} {}} /home/ahmed/MicroProcessor/my_4x16Decoder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_4x16Decoder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_4x16Decoder
+-- Compiling architecture a_my_4x16Decoder of my_4x16Decoder
+
+} {} {}} /home/ahmed/MicroProcessor/my_3x8Decoder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_3x8Decoder.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,6 +95,63 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Decoding_Circuit
 -- Compiling architecture arch_Decoding_Circuit of Decoding_Circuit
 
+} {} {}} /home/ahmed/MicroProcessor/ram.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/ram.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}} /home/ahmed/MicroProcessor/CPU.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/CPU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CPU
+-- Compiling architecture Arch of CPU
+
+} {} {}} /home/ahmed/MicroProcessor/Control_Unit.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Control_Unit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Control_Unit
+-- Compiling architecture Arch of Control_Unit
+
+} {} {}} /home/ahmed/MicroProcessor/my_2x4Decoder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_2x4Decoder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_2x4Decoder
+-- Compiling architecture a_my_2x4Decoder of my_2x4Decoder
+
+} {} {}} /home/ahmed/MicroProcessor/mux_seq.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/mux_seq.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_seq
+-- Compiling architecture a_mux_seq of mux_seq
+
+} {} {}} /home/ahmed/MicroProcessor/mux_df.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/mux_df.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4
+-- Compiling architecture Data_flow of mux4
+
+} {} {}} /home/ahmed/MicroProcessor/my_adder.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/my_adder.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+
 } {} {}} /home/ahmed/MicroProcessor/Pla_Circuit.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Pla_Circuit.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -22,13 +160,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Pla_Circuit
 -- Compiling architecture a_Pla_Circuit of Pla_Circuit
 
-} {} {}} /home/ahmed/MicroProcessor/decoder_2x4.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/decoder_2x4.vhd
+} {} {}} /home/ahmed/MicroProcessor/Oring.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Oring.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity decoder_2x4
--- Compiling architecture decoder_2x4 of decoder_2x4
+-- Compiling entity Oring
+-- Compiling architecture a_Oring of Oring
 
 } {} {}} /home/ahmed/MicroProcessor/tri_state_buffer.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/tri_state_buffer.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -38,21 +176,12 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity tri_state_buffer
 -- Compiling architecture Arch of tri_state_buffer
 
-} {} {}} /home/ahmed/MicroProcessor/Control_Store.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Control_Store.vhd
+} {} {}} /home/ahmed/MicroProcessor/A.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/A.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity Control_Store
--- Compiling architecture Control_Store of Control_Store
-
-} {} {}} /home/ahmed/MicroProcessor/Register.vhd {1 {vcom -work work -2002 -explicit /home/ahmed/MicroProcessor/Register.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity n_Register
--- Compiling architecture n_Register of n_Register
+-- Compiling entity A
+-- Compiling architecture arch10 of A
 
 } {} {}}

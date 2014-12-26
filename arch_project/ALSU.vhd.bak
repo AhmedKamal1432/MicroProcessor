@@ -1,0 +1,85 @@
+Library ieee;
+
+Use ieee.std_logic_1164.all;
+
+entity ALSU is  
+		port (a,b:in std_logic_vector (15 downto 0);
+		s0,s1,cin,x0,x1 : in std_logic;
+		F : out std_logic_vector (15 downto 0);
+		Neg,OV,Zero,cout: out std_logic);    
+	end entity ALSU ;
+
+
+
+architecture  arch of ALSU is
+  
+component portA  is  
+		port (a,b:in std_logic_vector (15 downto 0);
+		s0,s1,cin : in std_logic;
+		N,V,Z : out std_logic;
+		F : out std_logic_vector (15 downto 0);
+		C : out std_logic);    
+end component ;
+
+component portB  is  
+		port (a,b :in std_logic_vector (15 downto 0);
+		s0,s1 : in std_logic;
+		N,C,V,Z : out std_logic;
+		F : out std_logic_vector (15 downto 0));    
+	end component ;
+	
+	component portC  is  
+		port (a:in std_logic_vector (15 downto 0);
+		s0,s1,cin : in std_logic;
+		N,C,V,Z : out std_logic;
+		F : out std_logic_vector (15 downto 0));    
+	end component ;
+	
+	component portD  is  
+		port (a:in std_logic_vector (15 downto 0);
+		s0,s1,cin : in std_logic;
+		N,C,V,Z : out std_logic;
+		F : out std_logic_vector (15 downto 0));    
+	end component ;
+	
+	signal w0,w1,w2,w3 : std_logic_vector(15 downto 0);
+	signal C0,C1,C2,C3: std_logic;
+	signal Z0,Z1,Z2,Z3 : std_logic;
+	signal V0,V1,V2,V3: std_logic;
+	signal N0,N1,N2,N3 : std_logic;
+begin
+  
+	u0:portA port map(a,b,s0,s1,cin,N0,V0,Z0,w0,C0);
+    u1:portB port map(a,b,s0,s1,N1,C1,V1,Z1,w1);
+    u2:portC port map(a,s0,s1,cin,N2,C2,V2,Z2,w2);
+    u3:portD port map(a,s0,s1,cin,N3,C3,V3,Z3,w3);
+      
+      
+  F <= w0 when x0='0' and  x1='0'
+  else w1 when x0='0' and  x1='1'
+  else w2 when x0='1' and  x1='0'
+  else w3 when x0='1' and  x1='1';
+ 
+        
+  Neg <= N0 when x0='0' and  x1='0'
+  else N1 when x0='0' and  x1='1'
+  else N2 when x0='1' and  x1='0'
+  else N3 when x0='1' and  x1='1';
+         
+  Zero <= Z0 when x0='0' and  x1='0'
+  else Z1 when x0='0' and  x1='1'
+  else Z2 when x0='1' and  x1='0'
+  else Z3 when x0='1' and  x1='1';
+         
+  OV <= V0 when x0='0' and  x1='0'
+  else V1 when x0='0' and  x1='1'
+  else V2 when x0='1' and  x1='0'
+  else V3 when x0='1' and  x1='1';
+         
+  cout <= C0 when x0='0' and  x1='0'
+  else C1 when x0='0' and  x1='1'
+  else C2 when x0='1' and  x1='0'
+  else C3 when x0='1' and  x1='1';
+end arch;
+
+

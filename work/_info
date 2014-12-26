@@ -3,285 +3,847 @@ K3
 13
 cModel Technology
 d/home/ahmed/Documents/labs/Arch/lab 4 repeat
-Econtrol_store
-Z0 w1417909128
-Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 d/home/ahmed/MicroProcessor
-Z5 8/home/ahmed/MicroProcessor/Control_Store.vhd
-Z6 F/home/ahmed/MicroProcessor/Control_Store.vhd
+Ea
+Z0 w1418331519
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 d/home/ahmed/MicroProcessor
+Z4 8/home/ahmed/MicroProcessor/A.vhd
+Z5 F/home/ahmed/MicroProcessor/A.vhd
 l0
-L6
-Va<@QDcCLFg3IB4;hFD0FX0
-Z7 OV;C;10.1d;51
+L3
+VfzgLW]^lH4C4UA4ndRXAZ3
+Z6 OV;C;10.1d;51
 32
-Z8 !s108 1418339801.819739
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Control_Store.vhd|
-Z10 !s107 /home/ahmed/MicroProcessor/Control_Store.vhd|
-Z11 o-work work -2002 -explicit -O0
-Z12 tExplicit 1
-!s100 >k79M60UL]bXKO>9GYnZQ0
+Z7 !s108 1418419629.063272
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/A.vhd|
+Z9 !s107 /home/ahmed/MicroProcessor/A.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 6k0H5UGK5Yo:ZmZ@];Pde3
 !i10b 1
-Acontrol_store
+Aarch10
 R1
 R2
-R3
-DEx4 work 13 control_store 0 22 a<@QDcCLFg3IB4;hFD0FX0
-l31
-L13
-Vg<j^naRg>IPjTG4jNN5bI2
-R7
+DEx4 work 1 a 0 22 fzgLW]^lH4C4UA4ndRXAZ3
+l23
+L12
+Vi1>Ga2f9C0W1S>cnKY@3z1
+R6
 32
+R7
 R8
 R9
 R10
 R11
-R12
-!s100 4[lW`6FnDkz?2fjNneUE21
+!s100 :K=_bZ4G1?P5SaRI:XBA[2
 !i10b 1
-Edecoder_2x4
-Z13 w1415145286
+Ealsu
+Z12 w1418400005
+R1
 R2
 R3
-R4
-Z14 8/home/ahmed/MicroProcessor/decoder_2x4.vhd
-Z15 F/home/ahmed/MicroProcessor/decoder_2x4.vhd
+Z13 8/home/ahmed/MicroProcessor/ALSU.vhd
+Z14 F/home/ahmed/MicroProcessor/ALSU.vhd
 l0
 L3
-VA^IBUl<T4>]24m^hC>M6A3
-R7
+VNYG5TD]2M8[kPNOPSEk2K3
+R6
 32
-Z16 !s108 1418339801.698677
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/decoder_2x4.vhd|
-Z18 !s107 /home/ahmed/MicroProcessor/decoder_2x4.vhd|
+Z15 !s108 1418419629.107198
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/ALSU.vhd|
+Z17 !s107 /home/ahmed/MicroProcessor/ALSU.vhd|
+R10
 R11
-R12
-!s100 cZJE[fMZVAiBE>jBQhO6c1
+!s100 IB]^?CnYaVO6^0:R_W;PC2
 !i10b 1
-Adecoder_2x4
+Aarch4
+R1
 R2
-R3
-DEx4 work 11 decoder_2x4 0 22 A^IBUl<T4>]24m^hC>M6A3
-l9
-L8
-VEhIWHZMh=RI8UKO01OIa=1
-R7
+DEx4 work 4 alsu 0 22 NYG5TD]2M8[kPNOPSEk2K3
+l57
+L12
+VnzHOX6J?M<jH4gM`9_l:j2
+R6
 32
+R15
 R16
 R17
-R18
+R10
 R11
-R12
-!s100 oC^E`TO9njdkf2>2[^GWR1
+!s100 <mbb2ImYF4H0nza6dW7n@1
 !i10b 1
-Edecoding_circuit
-Z19 w1418338489
+Eb
+Z18 w1418331590
+R1
 R2
 R3
-R4
-Z20 8/home/ahmed/MicroProcessor/Decoding_Circuit.vhd
-Z21 F/home/ahmed/MicroProcessor/Decoding_Circuit.vhd
-l0
-L4
-VaVEZA`[OaEP4<C4^3JMRU3
-R7
-32
-Z22 !s108 1418339801.874962
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
-Z24 !s107 /home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
-R11
-R12
-!s100 H>L@`S1@1=caJXGKEdSMV2
-!i10b 1
-Aarch_decoding_circuit
-R2
-R3
-DEx4 work 16 decoding_circuit 0 22 aVEZA`[OaEP4<C4^3JMRU3
-l43
-L14
-V_0=_A5NI20O]E_J06hk@X0
-R7
-32
-R22
-R23
-R24
-R11
-R12
-!s100 N_<7MUSM>A=Y_V;0?7nHh0
-!i10b 1
-Emy_3x8decoder
-Z25 w1418311385
-R2
-R3
-R4
-Z26 8/home/ahmed/MicroProcessor/my_3x8Decoder.vhd
-Z27 F/home/ahmed/MicroProcessor/my_3x8Decoder.vhd
+Z19 8/home/ahmed/MicroProcessor/B.vhd
+Z20 F/home/ahmed/MicroProcessor/B.vhd
 l0
 L3
-VZODA0TV;POPF3^K=LI^LY2
-R7
+V^WPknD;JXY3enM8D7>>>00
+R6
 32
-Z28 !s108 1418339801.916671
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_3x8Decoder.vhd|
-Z30 !s107 /home/ahmed/MicroProcessor/my_3x8Decoder.vhd|
+Z21 !s108 1418419629.153672
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/B.vhd|
+Z23 !s107 /home/ahmed/MicroProcessor/B.vhd|
+R10
 R11
-R12
-!s100 1;X@FeV^[Ao:cHSz]S[fV0
+!s100 X7<6=hkBJeG@8;<N8Gnb@0
 !i10b 1
-Aa_my_3x8decoder
+Aarch1
+R1
+R2
+DEx4 work 1 b 0 22 ^WPknD;JXY3enM8D7>>>00
+l12
+L10
+VDA?7UjIjFfX8F9fiiTUeo0
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 Ym07CIfN4>f1]8]bc6;Hh2
+!i10b 1
+Ec
+Z24 w1418331610
+R1
 R2
 R3
-DEx4 work 13 my_3x8decoder 0 22 ZODA0TV;POPF3^K=LI^LY2
-l9
-L8
-VPE7^HCnRAc9]3Sl?FDJAV2
-R7
+Z25 8/home/ahmed/MicroProcessor/C.vhd
+Z26 F/home/ahmed/MicroProcessor/C.vhd
+l0
+L3
+V;PF9:^ogNgaU<QfHN90KE0
+R6
 32
+Z27 !s108 1418419629.196558
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/C.vhd|
+Z29 !s107 /home/ahmed/MicroProcessor/C.vhd|
+R10
+R11
+!s100 EEH^=lD>YYU?7?N57FklC0
+!i10b 1
+Aarch2
+R1
+R2
+DEx4 work 1 c 0 22 ;PF9:^ogNgaU<QfHN90KE0
+l13
+L11
+VOG3beUl??4?SNZSM?=Q`K0
+R6
+32
+R27
 R28
 R29
-R30
+R10
 R11
-R12
-!s100 YK_hR]IiQJL?iZVeoHKHI2
+!s100 4h<[Hh<K7TSgCUJ7zNW1f3
 !i10b 1
-En_register
-Z31 w1415143167
+Econtrol_store
+Z30 w1418419938
+Z31 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
 R2
 R3
-R4
-Z32 8/home/ahmed/MicroProcessor/Register.vhd
-Z33 F/home/ahmed/MicroProcessor/Register.vhd
+Z32 8/home/ahmed/MicroProcessor/Control_Store.vhd
+Z33 F/home/ahmed/MicroProcessor/Control_Store.vhd
 l0
-L4
-VIjFITeS3HPn7hjU>J1@Kb2
-R7
+L6
+VET2aPTOPc>BYVdRaIY@ic1
+R6
 32
-Z34 !s108 1418339801.777533
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Register.vhd|
-Z36 !s107 /home/ahmed/MicroProcessor/Register.vhd|
+Z34 !s108 1418419953.413598
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Control_Store.vhd|
+Z36 !s107 /home/ahmed/MicroProcessor/Control_Store.vhd|
+R10
 R11
-R12
-!s100 0IN2zRKOkjXkc`CcS^hU63
+!s100 1H@BUIhdDAdQ>gIINB5_z3
 !i10b 1
-An_register
+Acontrol_store
+R31
+R1
 R2
-R3
-DEx4 work 10 n_register 0 22 IjFITeS3HPn7hjU>J1@Kb2
-l12
-L11
-VW;G68^BUR>d4`_LmCh8ez2
-R7
+DEx4 work 13 control_store 0 22 ET2aPTOPc>BYVdRaIY@ic1
+l80
+L13
+VUBIYJ?_Web?V2[XF8cDad0
+R6
 32
 R34
 R35
 R36
+R10
 R11
-R12
-!s100 R_ImdK^2W=5CE4S9W2z_W3
+!s100 o0F@>B1:Fje>JJR_`75nQ3
 !i10b 1
-Eoring
-Z37 w1418339793
+Econtrol_unit
+Z37 w1418413910
+R1
 R2
 R3
-R4
-Z38 8/home/ahmed/MicroProcessor/Oring.vhd
-Z39 F/home/ahmed/MicroProcessor/Oring.vhd
+Z38 8/home/ahmed/MicroProcessor/Control_Unit.vhd
+Z39 F/home/ahmed/MicroProcessor/Control_Unit.vhd
 l0
 L4
-V4SX6odBbh9zGbW_24fc_>1
-R7
+Vgj6nD8ojPk?`9:Oc=h;UC2
+R6
 32
-Z40 !s108 1418339801.960696
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Oring.vhd|
-Z42 !s107 /home/ahmed/MicroProcessor/Oring.vhd|
+Z40 !s108 1418419629.251791
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Control_Unit.vhd|
+Z42 !s107 /home/ahmed/MicroProcessor/Control_Unit.vhd|
+R10
 R11
-R12
-!s100 K^jmk5U`U41M2QGL=IHIX0
+!s100 RABeX@8:5nY3UZ>d9Ll8T2
 !i10b 1
-Aa_oring
+Aarch
+R1
 R2
-R3
-DEx4 work 5 oring 0 22 4SX6odBbh9zGbW_24fc_>1
-l14
-L12
-VWdVR2TjcA;czdHI0lGdMB0
-R7
+DEx4 work 12 control_unit 0 22 gj6nD8ojPk?`9:Oc=h;UC2
+l83
+L26
+VgSQa?7hGlCIaAYlV9NlF<1
+R6
 32
 R40
 R41
 R42
+R10
 R11
-R12
-!s100 PD_D4PKo;`:L;7X5HIM8z3
+!s100 NCZ1RYYScMC=m^<YoE:VF2
 !i10b 1
-Epla_circuit
-Z43 w1418318019
+Ecpu
+Z43 w1418421067
+R1
 R2
 R3
-R4
-Z44 8/home/ahmed/MicroProcessor/Pla_Circuit.vhd
-Z45 F/home/ahmed/MicroProcessor/Pla_Circuit.vhd
+Z44 8/home/ahmed/MicroProcessor/CPU.vhd
+Z45 F/home/ahmed/MicroProcessor/CPU.vhd
 l0
-L4
-VUQc2zk`Tn^SzR855Og9WC1
-!s100 UE4`X@MC90@FeZ2hzE2b^2
-R7
+L3
+VMl33JiWdIEC3W;^91kVNU3
+R6
 32
-!i10b 1
-Z46 !s108 1418339802.001976
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Pla_Circuit.vhd|
-Z48 !s107 /home/ahmed/MicroProcessor/Pla_Circuit.vhd|
+Z46 !s108 1418421076.492965
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/CPU.vhd|
+Z48 !s107 /home/ahmed/MicroProcessor/CPU.vhd|
+R10
 R11
-R12
-Aa_pla_circuit
-R2
-R3
-Z49 DEx4 work 11 pla_circuit 0 22 UQc2zk`Tn^SzR855Og9WC1
-l16
-L11
-Z50 V7]6ZXC7?b2LaRgai51`h93
-Z51 !s100 l5X0o?YK8LDO99>V`2:g?2
-R7
-32
+!s100 `_PT>d@4FhfRc:kl`jzJd2
 !i10b 1
+Aarch
+R1
+R2
+DEx4 work 3 cpu 0 22 Ml33JiWdIEC3W;^91kVNU3
+l90
+L7
+VCfUfBfc`8V84eYbd@l<oH0
+R6
+32
 R46
 R47
 R48
+R10
 R11
-R12
-Etri_state_buffer
-Z52 w1415143072
+!s100 H2GJCce`ZJ^hF[b8lf2[T2
+!i10b 1
+Ed
+Z49 w1418331621
+R1
 R2
 R3
-R4
-Z53 8/home/ahmed/MicroProcessor/tri_state_buffer.vhd
-Z54 F/home/ahmed/MicroProcessor/tri_state_buffer.vhd
+Z50 8/home/ahmed/MicroProcessor/D.vhd
+Z51 F/home/ahmed/MicroProcessor/D.vhd
+l0
+L4
+V49dckR>=]JXoiQX500L231
+R6
+32
+Z52 !s108 1418419629.339727
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/D.vhd|
+Z54 !s107 /home/ahmed/MicroProcessor/D.vhd|
+R10
+R11
+!s100 GHgOKaKRJlG_FTA3>YPQg2
+!i10b 1
+Aarch3
+R1
+R2
+DEx4 work 1 d 0 22 49dckR>=]JXoiQX500L231
+l14
+L12
+VfRi^K`BJ@]YG_=zebK@Y[3
+R6
+32
+R52
+R53
+R54
+R10
+R11
+!s100 3[<eM@`2<nk<j`R:<3nKR1
+!i10b 1
+Edecoder_2x4
+Z55 w1415145286
+R1
+R2
+R3
+Z56 8/home/ahmed/MicroProcessor/decoder_2x4.vhd
+Z57 F/home/ahmed/MicroProcessor/decoder_2x4.vhd
+l0
+L3
+VA^IBUl<T4>]24m^hC>M6A3
+R6
+32
+Z58 !s108 1418419628.763080
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/decoder_2x4.vhd|
+Z60 !s107 /home/ahmed/MicroProcessor/decoder_2x4.vhd|
+R10
+R11
+!s100 cZJE[fMZVAiBE>jBQhO6c1
+!i10b 1
+Adecoder_2x4
+R1
+R2
+DEx4 work 11 decoder_2x4 0 22 A^IBUl<T4>]24m^hC>M6A3
+l9
+L8
+VEhIWHZMh=RI8UKO01OIa=1
+R6
+32
+R58
+R59
+R60
+R10
+R11
+!s100 oC^E`TO9njdkf2>2[^GWR1
+!i10b 1
+Edecoding_circuit
+Z61 w1418338489
+R1
+R2
+R3
+Z62 8/home/ahmed/MicroProcessor/Decoding_Circuit.vhd
+Z63 F/home/ahmed/MicroProcessor/Decoding_Circuit.vhd
+l0
+L4
+VaVEZA`[OaEP4<C4^3JMRU3
+R6
+32
+Z64 !s108 1418419628.906096
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
+Z66 !s107 /home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
+R10
+R11
+!s100 H>L@`S1@1=caJXGKEdSMV2
+!i10b 1
+Aarch_decoding_circuit
+R1
+R2
+DEx4 work 16 decoding_circuit 0 22 aVEZA`[OaEP4<C4^3JMRU3
+l43
+L14
+V_0=_A5NI20O]E_J06hk@X0
+R6
+32
+R64
+R65
+R66
+R10
+R11
+!s100 N_<7MUSM>A=Y_V;0?7nHh0
+!i10b 1
+Emux4
+Z67 w1418318471
+R1
+R2
+R3
+Z68 8/home/ahmed/MicroProcessor/mux_df.vhd
+Z69 F/home/ahmed/MicroProcessor/mux_df.vhd
+l0
+L3
+VBQ=GnCA6>CgcHOi76]Qb=3
+R6
+32
+Z70 !s108 1418419629.382758
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/mux_df.vhd|
+Z72 !s107 /home/ahmed/MicroProcessor/mux_df.vhd|
+R10
+R11
+!s100 bA@Hc3Hz]^5RU90LP`56G0
+!i10b 1
+Adata_flow
+R1
+R2
+DEx4 work 4 mux4 0 22 BQ=GnCA6>CgcHOi76]Qb=3
+l15
+L14
+VU5]T5IaZoolW>jZz2R2hL0
+R6
+32
+R70
+R71
+R72
+R10
+R11
+!s100 A:_<LSi=2om^]K2?K32iZ2
+!i10b 1
+Emux_seq
+Z73 w1418161692
+R1
+R2
+R3
+Z74 8/home/ahmed/MicroProcessor/mux_seq.vhd
+Z75 F/home/ahmed/MicroProcessor/mux_seq.vhd
+l0
+L5
+Vmn09Uh7M>L^B=gUI[DbE91
+R6
+32
+Z76 !s108 1418419629.416647
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/mux_seq.vhd|
+Z78 !s107 /home/ahmed/MicroProcessor/mux_seq.vhd|
+R10
+R11
+!s100 k:5oQa8?JUO]36;lCC?`23
+!i10b 1
+Aa_mux_seq
+R1
+R2
+DEx4 work 7 mux_seq 0 22 mn09Uh7M>L^B=gUI[DbE91
+l16
+L15
+Vk=7k4?9c]EIBY:SlST_6O0
+R6
+32
+R76
+R77
+R78
+R10
+R11
+!s100 `i1A]MkY:5[M4;ib[_;]^0
+!i10b 1
+Emy_2x4decoder
+Z79 w1417913147
+R1
+R2
+R3
+Z80 8/home/ahmed/MicroProcessor/my_2x4Decoder.vhd
+Z81 F/home/ahmed/MicroProcessor/my_2x4Decoder.vhd
+l0
+L3
+V8Hcj]05Ujn[cjl>7[E]jV0
+R6
+32
+Z82 !s108 1418419629.450961
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_2x4Decoder.vhd|
+Z84 !s107 /home/ahmed/MicroProcessor/my_2x4Decoder.vhd|
+R10
+R11
+!s100 ?F[abh5@;_0E2cYHBX>[01
+!i10b 1
+Aa_my_2x4decoder
+R1
+R2
+DEx4 work 13 my_2x4decoder 0 22 8Hcj]05Ujn[cjl>7[E]jV0
+l9
+L8
+VOMYchkGo=f_XAYcJJ02;81
+R6
+32
+R82
+R83
+R84
+R10
+R11
+!s100 D[hE;c2zg=k_h4LUC5kc83
+!i10b 1
+Emy_3x8decoder
+Z85 w1418311385
+R1
+R2
+R3
+Z86 8/home/ahmed/MicroProcessor/my_3x8Decoder.vhd
+Z87 F/home/ahmed/MicroProcessor/my_3x8Decoder.vhd
+l0
+L3
+VZODA0TV;POPF3^K=LI^LY2
+R6
+32
+Z88 !s108 1418419628.950416
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_3x8Decoder.vhd|
+Z90 !s107 /home/ahmed/MicroProcessor/my_3x8Decoder.vhd|
+R10
+R11
+!s100 1;X@FeV^[Ao:cHSz]S[fV0
+!i10b 1
+Aa_my_3x8decoder
+R1
+R2
+DEx4 work 13 my_3x8decoder 0 22 ZODA0TV;POPF3^K=LI^LY2
+l9
+L8
+VPE7^HCnRAc9]3Sl?FDJAV2
+R6
+32
+R88
+R89
+R90
+R10
+R11
+!s100 YK_hR]IiQJL?iZVeoHKHI2
+!i10b 1
+Emy_4x16decoder
+Z91 w1417910474
+R1
+R2
+R3
+Z92 8/home/ahmed/MicroProcessor/my_4x16Decoder.vhd
+Z93 F/home/ahmed/MicroProcessor/my_4x16Decoder.vhd
+l0
+L3
+VWV67:LYiHckF_hj;jL<DW2
+R6
+32
+Z94 !s108 1418419629.490859
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_4x16Decoder.vhd|
+Z96 !s107 /home/ahmed/MicroProcessor/my_4x16Decoder.vhd|
+R10
+R11
+!s100 lGVoA[Z:ZTUY9UB20V[UV2
+!i10b 1
+Aa_my_4x16decoder
+R1
+R2
+DEx4 work 14 my_4x16decoder 0 22 WV67:LYiHckF_hj;jL<DW2
+l9
+L8
+VhJagaX6ZSILKalLAz>=Pb0
+R6
+32
+R94
+R95
+R96
+R10
+R11
+!s100 mcU@L[3jU:35mQ_JFoIz;3
+!i10b 1
+Emy_adder
+Z97 w1413701004
+R1
+R2
+R3
+Z98 8/home/ahmed/MicroProcessor/my_adder.vhd
+Z99 F/home/ahmed/MicroProcessor/my_adder.vhd
+l0
+L5
+VO2P:VbeLW;L05i^U;8bA^0
+R6
+32
+Z100 !s108 1418419629.532271
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_adder.vhd|
+Z102 !s107 /home/ahmed/MicroProcessor/my_adder.vhd|
+R10
+R11
+!s100 feTXKRP:haDh>RPCHFa1z1
+!i10b 1
+Aa_my_adder
+R1
+R2
+DEx4 work 8 my_adder 0 22 O2P:VbeLW;L05i^U;8bA^0
+l14
+L12
+Vk<gY`5cGLeYR3mC5Zkz8<2
+R6
+32
+R100
+R101
+R102
+R10
+R11
+!s100 QJgan15mJXM=GZRRRi<za1
+!i10b 1
+Emy_nadder
+Z103 w1418330738
+R1
+R2
+R3
+Z104 8/home/ahmed/MicroProcessor/my_nadder.vhd
+Z105 F/home/ahmed/MicroProcessor/my_nadder.vhd
+l0
+L4
+V8EU_633?Q8_4>LhK0hK?P3
+R6
+32
+Z106 !s108 1418419629.570191
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/my_nadder.vhd|
+Z108 !s107 /home/ahmed/MicroProcessor/my_nadder.vhd|
+R10
+R11
+!s100 Zi:EMnAnMPi<7Q6F=``nD0
+!i10b 1
+Aa_my_nadder
+R1
+R2
+DEx4 work 9 my_nadder 0 22 8EU_633?Q8_4>LhK0hK?P3
+l19
+L12
+VR<S@DncZBgJIZEHGVflTa3
+R6
+32
+R106
+R107
+R108
+R10
+R11
+!s100 eAKb=cT0A8zBP7AGlW1^m3
+!i10b 1
+Emy_nreg
+Z109 w1415018229
+R1
+R2
+R3
+Z110 8/home/ahmed/MicroProcessor/nReg.vhd
+Z111 F/home/ahmed/MicroProcessor/nReg.vhd
+l0
+L4
+V=DMbm>O=6Ub88N;nfQL5]1
+R6
+32
+Z112 !s108 1418419629.614871
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/nReg.vhd|
+Z114 !s107 /home/ahmed/MicroProcessor/nReg.vhd|
+R10
+R11
+!s100 :]Wln0J8LAfPGPaOno0Th2
+!i10b 1
+Aarch_my_nreg
+R1
+R2
+DEx4 work 7 my_nreg 0 22 =DMbm>O=6Ub88N;nfQL5]1
+l15
+L10
+V7jC9;ZOGn^o7YU>GdhjRa2
+R6
+32
+R112
+R113
+R114
+R10
+R11
+!s100 Tg9DL4Rn5b<G9<;hL7cOe3
+!i10b 1
+Emy_reg
+Z115 w1415018363
+R1
+R2
+R3
+Z116 8/home/ahmed/MicroProcessor/Reg.vhd
+Z117 F/home/ahmed/MicroProcessor/Reg.vhd
+l0
+L3
+VS_VM?]di>>?R13:@za79G2
+R6
+32
+Z118 !s108 1418419629.699464
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Reg.vhd|
+Z120 !s107 /home/ahmed/MicroProcessor/Reg.vhd|
+R10
+R11
+!s100 ZN@S=Gcnh3o5GVF5GKG7>1
+!i10b 1
+Aa_my_reg
+R1
+R2
+DEx4 work 6 my_reg 0 22 S_VM?]di>>?R13:@za79G2
+l9
+L8
+VoPn^];d1D[k_Y@9AMIE700
+R6
+32
+R118
+R119
+R120
+R10
+R11
+!s100 Z@D]8oQGk9F9_^i3dY^>g3
+!i10b 1
+En_register
+Z121 w1415143167
+R1
+R2
+R3
+Z122 8/home/ahmed/MicroProcessor/Register.vhd
+Z123 F/home/ahmed/MicroProcessor/Register.vhd
+l0
+L4
+VIjFITeS3HPn7hjU>J1@Kb2
+R6
+32
+Z124 !s108 1418386704.341093
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Register.vhd|
+Z126 !s107 /home/ahmed/MicroProcessor/Register.vhd|
+R10
+R11
+!s100 0IN2zRKOkjXkc`CcS^hU63
+!i10b 1
+An_register
+R1
+R2
+DEx4 work 10 n_register 0 22 IjFITeS3HPn7hjU>J1@Kb2
+l12
+L11
+VW;G68^BUR>d4`_LmCh8ez2
+R6
+32
+R124
+R125
+R126
+R10
+R11
+!s100 R_ImdK^2W=5CE4S9W2z_W3
+!i10b 1
+Eoring
+Z127 w1418339793
+R1
+R2
+R3
+Z128 8/home/ahmed/MicroProcessor/Oring.vhd
+Z129 F/home/ahmed/MicroProcessor/Oring.vhd
+l0
+L4
+V4SX6odBbh9zGbW_24fc_>1
+R6
+32
+Z130 !s108 1418419628.986881
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Oring.vhd|
+Z132 !s107 /home/ahmed/MicroProcessor/Oring.vhd|
+R10
+R11
+!s100 K^jmk5U`U41M2QGL=IHIX0
+!i10b 1
+Aa_oring
+R1
+R2
+DEx4 work 5 oring 0 22 4SX6odBbh9zGbW_24fc_>1
+l14
+L12
+VWdVR2TjcA;czdHI0lGdMB0
+R6
+32
+R130
+R131
+R132
+R10
+R11
+!s100 PD_D4PKo;`:L;7X5HIM8z3
+!i10b 1
+Epla_circuit
+Z133 w1418419620
+R1
+R2
+R3
+Z134 8/home/ahmed/MicroProcessor/Pla_Circuit.vhd
+Z135 F/home/ahmed/MicroProcessor/Pla_Circuit.vhd
+l0
+L4
+VUQc2zk`Tn^SzR855Og9WC1
+R6
+32
+Z136 !s108 1418419629.023841
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Pla_Circuit.vhd|
+Z138 !s107 /home/ahmed/MicroProcessor/Pla_Circuit.vhd|
+R10
+R11
+!s100 UE4`X@MC90@FeZ2hzE2b^2
+!i10b 1
+Aa_pla_circuit
+R1
+R2
+DEx4 work 11 pla_circuit 0 22 UQc2zk`Tn^SzR855Og9WC1
+l16
+L11
+VLHA:^8b0I]SGQK0kYDH=V3
+R6
+32
+R136
+R137
+R138
+R10
+R11
+!s100 O[n7bY^O^o;X?aEFONH]V0
+!i10b 1
+Eram
+Z139 w1418421116
+R31
+R1
+R2
+R3
+Z140 8/home/ahmed/MicroProcessor/ram.vhd
+Z141 F/home/ahmed/MicroProcessor/ram.vhd
+l0
+L6
+VMbY>j[X<Sa1GSM[nC[4Ra0
+!s100 oA:n@aiVOjfDg]Zm<SPL>2
+R6
+32
+!i10b 1
+Z142 !s108 1418421126.570824
+Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/ram.vhd|
+Z144 !s107 /home/ahmed/MicroProcessor/ram.vhd|
+R10
+R11
+Asyncrama
+R31
+R1
+R2
+Z145 DEx4 work 3 ram 0 22 MbY>j[X<Sa1GSM[nC[4Ra0
+l27
+L17
+VME6NdnkkoCc`@FVGoI4ez3
+!s100 QRQ?cmK8^L[lX0Gl:oaF81
+R6
+32
+!i10b 1
+R142
+R143
+R144
+R10
+R11
+Etri_state_buffer
+Z146 w1415143072
+R1
+R2
+R3
+Z147 8/home/ahmed/MicroProcessor/tri_state_buffer.vhd
+Z148 F/home/ahmed/MicroProcessor/tri_state_buffer.vhd
 l0
 L4
 VB8i>nIPEWSaf_BjN@S0LZ0
-R7
+R6
 32
-Z55 !s108 1418339801.737751
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/tri_state_buffer.vhd|
-Z57 !s107 /home/ahmed/MicroProcessor/tri_state_buffer.vhd|
+Z149 !s108 1418419628.804978
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/tri_state_buffer.vhd|
+Z151 !s107 /home/ahmed/MicroProcessor/tri_state_buffer.vhd|
+R10
 R11
-R12
 !s100 9iOel3`;KUh1EzkA6DP]Y3
 !i10b 1
 Aarch
+R1
 R2
-R3
 DEx4 work 16 tri_state_buffer 0 22 B8i>nIPEWSaf_BjN@S0LZ0
 l13
 L11
 VQRzNjYTj:XUBUHPIelUeS1
-R7
+R6
 32
-R55
-R56
-R57
+R149
+R150
+R151
+R10
 R11
-R12
 !s100 _c8d8QNa`zj`A_PG=nTDG1
 !i10b 1

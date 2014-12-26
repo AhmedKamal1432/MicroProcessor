@@ -80,28 +80,24 @@ class ToRom{
       mp["pcout"]     = MP(8,"0001");
       mp["mdrout"]    = MP(8,"0010");
       mp["zout"]      = MP(8,"0011");
-      mp["r0out"]     = MP(8,"0100");
-      mp["r1out"]     = MP(8,"0101");
-      mp["r2out"]     = MP(8,"0110");
-      mp["r3out"]     = MP(8,"0111");
+      mp["rsrcout"]     = MP(8,"0100");
+      mp["rdstout"]     = MP(8,"0101");
       mp["srcout"] = MP(8,"1000");
       mp["dstout"] = MP(8,"1001");
-      mp["tempout"]   = MP(8,"1010");
+      mp["tmpout"]   = MP(8,"1010");
       mp["addressout"]= MP(8,"1011");
 
       // F2 3 bit at 12 -> 14
       mp["pcin"]   = MP(12,"001");
       mp["irin"]   = MP(12,"010");
       mp["zin"]    = MP(12,"011");
-      mp["r0in"]   = MP(12,"100");
-      mp["r1in"]   = MP(12,"101");
-      mp["r2in"]   = MP(12,"110");
-      mp["r3in"]   = MP(12,"111");
+      mp["rsrcin"]   = MP(12,"100");
+      mp["rdstin"]   = MP(12,"101");
 
       // F3 2 bit  at 15 -> 16
       mp["marin"]   = MP(15,"01");
       mp["mdrin"]   = MP(15,"10");
-      mp["tempin"]  = MP(15,"11");
+      mp["tmpin"]  = MP(15,"11");
 
       // F4 2 bit at 17 -> 18
       mp["yin"]         = MP(17,"01");
@@ -112,15 +108,15 @@ class ToRom{
       // 19-> 22
 
       //F6 2 bit 23 -> 24
-      mp["read"]    = MP(23,"01");
-      mp["write"]   = MP(23,"10");
+      mp["rd"]    = MP(23,"01");
+      mp["wr"]   = MP(23,"10");
       mp["hlt"]     = MP(23,"11");
 
       //f7 1 bit 25
       mp["cleary"]   = MP(25,"1");
 
       //f8 1 bit 26 "Carry"
-      mp["setcarry"]   = MP(26,"1");
+      mp["setc"]   = MP(26,"1");
 
       //F9 1 bit 27 flag enable instead of WMFC
       //owrs
@@ -130,7 +126,7 @@ class ToRom{
       mp["ordst"]       = MP(28,"001");
       mp["orindsrc"]    = MP(28,"010");
       mp["orinddst"]    = MP(28,"011");
-      mp["ordresult"]   = MP(28,"100");
+      mp["orresult"]   = MP(28,"100");
       //owrs
       mp["or2op"]       = MP(28,"101");
 
@@ -153,7 +149,9 @@ class ToRom{
    // assign word for every line
     void assign_word(){
       int posArr[100]; CLR(posArr,0);
-      printf("%d\t=>\t\"%s",oct_to_dec(address) , oct_to_binary(next_address).c_str() );
+      string nnadd = oct_to_binary(next_address);
+      nnadd = nnadd.substr(1);
+      printf("%d\t=>\t\"%s",oct_to_dec(address) , nnadd.c_str() );
      string word(32-8,'0');
      /*
       strtoc of control word
@@ -201,7 +199,7 @@ class ToRom{
         pch = strtok (NULL," ,.-");
       }
       if(g)
-        printf("%s,\n",word.c_str() );
+        printf("%s\",\n",word.c_str() );
     }
 };
 int main()

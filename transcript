@@ -1,976 +1,1909 @@
 # Loading project MicroProcessor
+# Compile of decoder_2x4.vhd was successful.
+# Compile of tri_state_buffer.vhd was successful.
+# Compile of Register.vhd was successful.
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd failed with 4 errors.
+# 8 compiles, 1 failed with 4 errors. 
+# Compile of Pla_Circuit.vhd failed with 2 errors.
+# Compile of Pla_Circuit.vhd was successful with warnings.
+# Compile of decoder_2x4.vhd was successful.
+# Compile of tri_state_buffer.vhd was successful.
+# Compile of Register.vhd was successful.
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
 # reading /home/ahmed/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project lab 5
+# Loading project Arch
+# Error opening /home/ahmed/MicroProcessor/arch_project/C:/Users/FeZe/Desktop/arch_project/Control_Unit.vhd
+# Path name '/home/ahmed/MicroProcessor/arch_project/C:/Users/FeZe/Desktop/arch_project/Control_Unit.vhd' doesn't exist.
+# 0 compiles, 21 failed with no errors. 
+# reading /home/ahmed/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project MicroProcessor
 # Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
 # Compile of tri_state_buffer.vhd was successful.
-# 6 compiles, 0 failed with no errors. 
-lab 4.do
-# invalid command name "lab"
-do lab4.do
-# vsim work.main 
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd was successful.
+# Compile of A.vhd was successful.
+# Compile of ALSU.vhd was successful.
+# Compile of B.vhd was successful.
+# Compile of C.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of D.vhd was successful.
+# Compile of mux_df.vhd was successful.
+# Compile of mux_seq.vhd was successful.
+# Compile of my_2x4Decoder.vhd was successful.
+# Compile of my_4x16Decoder.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nReg.vhd was successful.
+# Compile of ram.vhd was successful.
+# Compile of Reg.vhd was successful.
+# 23 compiles, 0 failed with no errors. 
+# Compile of CPU.vhd was successful.
+# Compile of ram.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.cpu(arch)
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Error: Value length (4) does not equal array index length (16).
-# 
-# ** Error: (vsim-4011) Invalid force value: 9999 0.
-# Error in macro ./lab4.do line 41
-# Value length (4) does not equal array index length (16).
-# 
-# ** Error: (vsim-4011) Invalid force value: 9999 0.
-# 
-#     while executing
-# "force -freeze sim:/main/data_bus 9999 0"
-do lab4.do
-# vsim work.main 
+# ** Failure: (vsim-3817) Port "e" of entity "tri_state_buffer" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/TriR0 File: /home/ahmed/MicroProcessor/tri_state_buffer.vhd Line: 6
+# ** Error: (vsim-3732) /home/ahmed/MicroProcessor/CPU.vhd(98): No default binding for component instance 'TriR0'.
+#    The following component port is not on the entity:
+#           EN
+#         Region: /cpu/TriR0
+# Fatal error in file /home/ahmed/MicroProcessor/tri_state_buffer.vhd
+#  while elaborating region: /cpu/TriR0
+# Load interrupted
+# Error loading design
+# Compile of CPU.vhd was successful.
+vsim work.cpu(arch)
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1200 ps  Iteration: 1  Instance: /main/RAMLabel
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1400 ps  Iteration: 1  Instance: /main/RAMLabel
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of rom.vhd failed with 1 errors.
-# 8 compiles, 2 failed with 2 errors. 
-# Compile of rom.vhd failed with 1 errors.
-# Compile of rom.vhd failed with 1 errors.
-# Compile of rom.vhd failed with 1 errors.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd failed with 2 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 2 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd failed with 1 errors.
-# 8 compiles, 1 failed with 1 error. 
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd failed with 1 errors.
-# Compile of counter.vhd was successful.
-# Compile of counter.vhd was successful with warnings.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# Compile of cu.vhd failed with 1 errors.
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of cu.vhd failed with 1 errors.
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd failed with 1 errors.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# 9 compiles, 2 failed with 2 errors. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of cu.vhd was successful.
-vsim work.cu(struct)
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# ** Failure: (vsim-3807) Types do not match between component and entity for port "Add".
-#    Time: 0 ps  Iteration: 0  Instance: /cu/ROML File: /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd Line: 9
-# Fatal error in file /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd
-#  while elaborating region: /cu/ROML
-# Fatal error in file /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd
-#  while elaborating region: /cu
-# Error loading design
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-vsim work.cu(struct)
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# ** Failure: (vsim-3807) Types do not match between component and entity for port "Add".
-#    Time: 0 ps  Iteration: 0  Instance: /cu/ROML File: /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd Line: 9
-# Fatal error in file /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd
-#  while elaborating region: /cu/ROML
-# Fatal error in file /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd
-#  while elaborating region: /cu
-# Error loading design
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd failed with 1 errors.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-vsim work.cu(struct)
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# ** Fatal: (vsim-3348) Port length (16) does not match actual length (8) for port '/cu/ROML/Add'.
-#    Time: 0 ps  Iteration: 0  Instance: /cu/ROML File: /home/ahmed/Documents/labs/Arch/lab 5/rom.vhd Line: 9
+# Loading work.alsu(arch4)
+# ** Failure: (vsim-3817) Port "a1" of entity "alsu" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/ALU File: /home/ahmed/MicroProcessor/ALSU.vhd Line: 4
+# ** Failure: (vsim-3817) Port "a2" of entity "alsu" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/ALU File: /home/ahmed/MicroProcessor/ALSU.vhd Line: 4
+# ** Error: (vsim-3732) /home/ahmed/MicroProcessor/CPU.vhd(119): No default binding for component instance 'ALU'.
+#    The following component ports are not on the entity:
+#           Zero
+#           OV
+#           Neg
+#           F
+#           b
+#           a
+#         Region: /cpu/ALU
+# Loading work.b(arch1)
+# ** Fatal: Bad library format, library not compiled with ALTERA compiler.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu/ALU/u0 File: /home/ahmed/MicroProcessor/ALSU.vhd Line: 59
 # FATAL ERROR while loading design
 # Error loading design
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-vsim work.cu(struct)
-# vsim work.cu(struct) 
+# Compile of CPU.vhd failed with 1 errors.
+# Compile of CPU.vhd failed with 1 errors.
+# Compile of CPU.vhd was successful.
+vsim work.cpu(arch)
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
 add wave -position insertpoint  \
-sim:/cu/clk \
-sim:/cu/rst \
-sim:/cu/sr \
-sim:/cu/sw \
-sim:/cu/in_r \
-sim:/cu/out_r \
-sim:/cu/r \
-sim:/cu/w \
-sim:/cu/MAR_in \
-sim:/cu/MDR_in \
-sim:/cu/MDR_out
-add wave -position insertpoint  \
-sim:/cu/control_word \
-sim:/cu/r_add \
-sim:/cu/ONE
-force -freeze sim:/cu/rst 1 0
-run
-noforce sim:/cu/rst
-force -freeze sim:/cu/rst 0 0
-run
-run
-force -freeze sim:/cu/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/cu/rst 1 0
-run
-run
-force -freeze sim:/cu/rst 0 0
-run
-run
-run
-run
-run
-do cu.do
-# ** Error: Invalid time value: -r
-# ** Error: (vish-4004) The -repeat option requires a time period argument.
-# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
-# Error in macro ./cu.do line 18
-# Invalid time value: -r
-# ** Error: (vish-4004) The -repeat option requires a time period argument.
-# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+sim:/cpu/CLK \
+sim:/cpu/Rst \
+sim:/cpu/IR \
+sim:/cpu/R0in \
+sim:/cpu/R1in \
+sim:/cpu/R2in \
+sim:/cpu/R3in \
+sim:/cpu/R0out \
+sim:/cpu/R1out \
+sim:/cpu/R2out \
+sim:/cpu/R3out \
+sim:/cpu/PCout \
+sim:/cpu/MDRout \
+sim:/cpu/Zout \
+sim:/cpu/RSRCout \
+sim:/cpu/RDSTout \
+sim:/cpu/SOURCEout \
+sim:/cpu/DESTINout \
+sim:/cpu/TEMPout \
+sim:/cpu/PCin \
+sim:/cpu/IRin \
+sim:/cpu/Zin \
+sim:/cpu/RSRCin \
+sim:/cpu/RDSTin \
+sim:/cpu/MARin \
+sim:/cpu/MDRin \
+sim:/cpu/TEMPin \
+sim:/cpu/Yin \
+sim:/cpu/SOURCEin \
+sim:/cpu/DESTINin \
+sim:/cpu/RD \
+sim:/cpu/WR \
+sim:/cpu/CLEARY \
+sim:/cpu/CARRYin \
+sim:/cpu/FLAGS_E \
+sim:/cpu/ALSU_SIGNALS \
+sim:/cpu/mdrINPUT \
+sim:/cpu/ramOUT \
+sim:/cpu/buss \
+sim:/cpu/AfromY \
+sim:/cpu/Z \
+sim:/cpu/ramIN \
+sim:/cpu/ADD \
+sim:/cpu/R00out \
+sim:/cpu/R11out \
+sim:/cpu/R22out \
+sim:/cpu/R33out \
+sim:/cpu/Srcout \
+sim:/cpu/Destout \
+sim:/cpu/Tout \
+sim:/cpu/Z_value_out \
+sim:/cpu/Flags \
+sim:/cpu/mdrENABLE \
+sim:/cpu/MFC \
+sim:/cpu/selection \
+sim:/cpu/CLRY
+force -freeze sim:/cpu/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/Rst 1 0
+# Compile of decoder_2x4.vhd was successful.
+# Compile of tri_state_buffer.vhd was successful.
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd was successful.
+# Compile of A.vhd was successful.
+# Compile of ALSU.vhd was successful.
+# Compile of B.vhd was successful.
+# Compile of C.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of D.vhd was successful.
+# Compile of mux_df.vhd was successful.
+# Compile of mux_seq.vhd was successful.
+# Compile of my_2x4Decoder.vhd was successful.
+# Compile of my_4x16Decoder.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nReg.vhd was successful.
+# Compile of ram.vhd was successful.
+# Compile of Reg.vhd was successful.
+# 23 compiles, 0 failed with no errors. 
+quit -sim
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# ** Error: invalid command name "sim:/cpu/ADD"
+# Error in macro ./cpu_test.do line 37
+# invalid command name "sim:/cpu/ADD"
 #     while executing
-# "force -freeze sim:/cu/clk 1 0, 0 {50 ps} -r "
-do cu.do
-do cu.do
-# Cannot open macro file: cu.do
-do cu.vhd
-# ** Error: invalid command name "Library"
-# Error in macro ./cu.vhd line 1
-# invalid command name "Library"
+# "sim:/cpu/ADD \
+# sim:/cpu/mdrINPUT \
+# sim:/cpu/ramIN \
+# "
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+force -freeze sim:/cpu/CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cpu/Rst 1 0
+run
+force -freeze sim:/cpu/Rst 0 0
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 0  Instance: /cpu/MEMORY
+run
+# Compile of Control_Unit.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 0  Instance: /cpu/MEMORY
+# Compile of Control_Unit.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 0  Instance: /cpu/MEMORY
+# Compile of Control_Unit.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of Control_Store.vhd was successful.
+# Compile of CPU.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of CPU.vhd was successful.
+# Compile of ram.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of CPU.vhd was successful.
+# ** Error: (vish-4014) No objects found matching '/cpu/True_Flags'.
+# Error in macro ./cpu_test.do line 84
+# (vish-4014) No objects found matching '/cpu/True_Flags'.
 #     while executing
-# "Library ieee"
-do cu_test.do
-do cu_test.do
-# vsim work.cu(struct) 
+# "add wave -position insertpoint  \
+# sim:/cpu/CLK \
+# sim:/cpu/Rst \
+# sim:/cpu/IR \
+# sim:/cpu/buss \
+# sim:/cpu/ADD \
+# sim:/cpu/mdrINPUT \
+# sim:/cpu/ramIN \
+# sim:..."
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# **** Error: RestartQ cmd: namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim
-# ****        can't read "cbstate": no such variable
-# can't read "cbstate": no such variable
-#     while executing
-# "if {$cbstate} {
-#                   set PrefSource(WarnSourceChanged) 0
-#                }"
-#     (object "::.main_pane.source.interior.cs.body.editor" method "::vsimwidgets::Srcedit::SourceCheckCompileTime" body line 81)
-#     invoked from within
-# "SourceCheckCompileTime"
-#     (object "::.main_pane.source.interior.cs.body.editor" method "::vsimwidgets::Srcedit::InitializeForDebug" body line 29)
-#     invoked from within
-# "InitializeForDebug"
-#     (object "::.main_pane.source.interior.cs.body.editor" method "::vsimwidgets::Srcedit::SourceUpdateLoadComplete" body line 50)
-#     invoked from within
-# "$srcedit SourceUpdateLoadComplete -restart"
-#     (object "::.view_master" method "::vsimwidgets::ViewMaster::SourceUpdatesAfterRestart" body line 7)
-#     invoked from within
-# "::.view_master SourceUpdatesAfterRestart sim"
-#     (in namespace inscope "::vsimwidgets::ViewMaster" script line 1)
-#     invoked from within
-# "namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval $p $tankNamespace "
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+quit -sim
+quit -sim
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
 # Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
 # Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd was successful.
+# Compile of A.vhd was successful.
+# Compile of ALSU.vhd was successful.
+# Compile of B.vhd was successful.
+# Compile of C.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of D.vhd was successful.
+# Compile of mux_df.vhd was successful.
+# Compile of mux_seq.vhd was successful.
+# Compile of my_2x4Decoder.vhd was successful.
+# Compile of my_4x16Decoder.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nReg.vhd was successful.
 # Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do cu_test.do
-# vsim work.cu(struct) 
+# Compile of Reg.vhd was successful.
+# 23 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-do cu_test.do
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do cu_test.do
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do cu_test.do
-# vsim work.cu(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
-# Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
 # Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-force -freeze sim:/main/data_bus 0004 0
-force -freeze sim:/main/MAR_in 1 0
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-run
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Can't move the Now cursor.
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-do lab5.do
-# vsim work.main 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-vsim work.main(struct)
-# vsim work.main(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd failed with 1 errors.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-vsim work.main(struct)
-# vsim work.main(struct) 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
-# Loading work.tri_state_buffer(arch)
-# Loading ieee.numeric_std(body)
-# Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-add wave -position insertpoint  \
-sim:/main/clk \
-sim:/main/rst \
-sim:/main/r \
-sim:/main/w \
-sim:/main/in_r \
-sim:/main/out_r \
-sim:/main/MAR_in \
-sim:/main/MDR_in \
-sim:/main/MDR_out \
-sim:/main/data_bus \
-sim:/main/sr \
-sim:/main/sw \
-sim:/main/ram_data \
-sim:/main/ram_address \
-sim:/main/MDR_data_in \
-sim:/main/MDR_data_out \
-sim:/main/RClk \
-sim:/main/r_in_e \
-sim:/main/r_out_e \
-sim:/main/rout0 \
-sim:/main/rout1 \
-sim:/main/rout2 \
-sim:/main/rout3 \
-sim:/main/MDR_e
-force -freeze sim:/main/rst 1 0
-force -freeze sim:/main/data_bus 0004 0
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-force -freeze sim:/main/rst 0 0
 run
 run
 run
 run
 run
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd failed with 1 errors.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd failed with 1 errors.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of main.vhd failed with 1 errors.
-# Compile of main.vhd was successful.
-do test5.do
-# vsim work.main(struct) 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
 # Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of CPU.vhd was successful.
+# Compile of ram.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+step
+run
+step
+run
+run
+step
+run
+step
+# Compile of Control_Unit.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+# Compile of ALSU.vhd failed with 1 errors.
+# Compile of ALSU.vhd failed with 1 errors.
+# Compile of ALSU.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+# Compile of Control_Store.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Control_Store.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
+#    Time: 250 ps  Iteration: 1  Instance: /cpu/MEMORY
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ps  Iteration: 0  Instance: /cpu/CU/CS_Label
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 1  Instance: /cpu/MEMORY
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ps  Iteration: 0  Instance: /cpu/CU/CS_Label
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 1  Instance: /cpu/MEMORY
+run
+run
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 550 ps  Iteration: 0  Instance: /cpu/CU/CS_Label
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ps  Iteration: 1  Instance: /cpu/MEMORY
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of CPU.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of CPU.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 1  Instance: /cpu/MEMORY
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of Control_Store.vhd was successful.
+# Compile of CPU.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ps  Iteration: 0  Instance: /cpu/MEMORY
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+# Compile of Control_Store.vhd was successful.
+# Compile of ram.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of ram.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave  \
+sim:/cpu/CU/uAR
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Control_Store.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
+# Loading ieee.numeric_std(body)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
+# Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
+# Loading work.ram(syncrama)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 # Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
-# Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
 # Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd failed with 1 errors.
-# 9 compiles, 1 failed with 1 error. 
-# Compile of decoder_2x4.vhd was successful.
-# Compile of main.vhd was successful.
-# Compile of n_mux_2x1.vhd was successful.
+# Compile of Control_Store.vhd was successful.
+# Compile of Decoding_Circuit.vhd was successful.
+# Compile of my_3x8Decoder.vhd was successful.
+# Compile of Oring.vhd was successful.
+# Compile of Pla_Circuit.vhd was successful.
+# Compile of A.vhd was successful.
+# Compile of ALSU.vhd was successful.
+# Compile of B.vhd was successful.
+# Compile of C.vhd was successful.
+# Compile of Control_Unit.vhd was successful.
+# Compile of CPU.vhd was successful.
+# Compile of D.vhd was successful.
+# Compile of mux_df.vhd was successful.
+# Compile of mux_seq.vhd was successful.
+# Compile of my_2x4Decoder.vhd was successful.
+# Compile of my_4x16Decoder.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nReg.vhd was successful.
 # Compile of ram.vhd was successful.
-# Compile of Register.vhd was successful.
-# Compile of tri_state_buffer.vhd was successful.
-# Compile of rom.vhd was successful.
-# Compile of counter.vhd was successful.
-# Compile of cu.vhd was successful.
-# 9 compiles, 0 failed with no errors. 
-do test5.do
-# vsim work.main(struct) 
+# Compile of Reg.vhd was successful.
+# 23 compiles, 0 failed with no errors. 
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
 # Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Error: invalid command name "sim:/main/r"
-# Error in macro ./test5.do line 39
-# invalid command name "sim:/main/r"
-#     while executing
-# "sim:/main/r \
-# sim:/main/w \
-# sim:/main/in_r \
-# sim:/main/out_r \
-# sim:/main/MAR_in \
-# sim:/main/MDR_in \
-# sim:/main/MDR_out \
-# sim:/main/data_bus \
-# sim:/mai..."
-# Compile of main.vhd was successful.
-do test5.do
-# vsim work.main(struct) 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Control_Store.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
 # Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
 run
 run
-do test5.do
-# vsim work.main(struct) 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+mem save -o /home/ahmed/Desktop/ram.mem -f mti -data symbolic -addr hex /cpu/MEMORY/ram
+run
+mem save -o /home/ahmed/Desktop/ram.mem -f mti -data symbolic -addr hex /cpu/MEMORY/ram
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of CPU.vhd was successful.
+do cpu_test.do
+# vsim work.cpu(arch) 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.main(struct)
-# Loading work.cu(struct)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.counter(counter)
+# Loading work.cpu(arch)
+# Loading work.control_unit(arch)
+# Loading work.my_nreg(arch_my_nreg)
+# Loading work.my_reg(a_my_reg)
 # Loading ieee.numeric_std(body)
-# Loading work.rom(rom)
-# Loading work.n_register(n_register)
-# Loading work.n_mux_2x1(n_mux_2x1)
+# Loading work.control_store(control_store)
+# Loading work.decoding_circuit(arch_decoding_circuit)
+# Loading work.my_3x8decoder(a_my_3x8decoder)
+# Loading work.oring(a_oring)
+# Loading work.pla_circuit(a_pla_circuit)
+# Loading work.my_4x16decoder(a_my_4x16decoder)
+# Loading work.my_2x4decoder(a_my_2x4decoder)
 # Loading work.tri_state_buffer(arch)
+# Loading work.alsu(arch4)
+# Loading work.b(arch1)
+# Loading work.c(arch2)
+# Loading work.d(arch3)
+# Loading work.a(arch10)
+# Loading work.my_nadder(a_my_nadder)
+# Loading work.my_adder(a_my_adder)
+# Loading work.mux4(data_flow)
 # Loading work.ram(syncrama)
-# Loading work.decoder_2x4(decoder_2x4)
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /main/RAMLabel
-run
-run
-quit
+# Compile of ram.vhd was successful.
