@@ -14,7 +14,7 @@ end Decoding_Circuit;
 Architecture arch_Decoding_Circuit of Decoding_Circuit is
   
   -- signal intializtion 
-  signal ORdst,ORindsrc,ORinddst,ORresult,OR2op,E : std_logic;
+  signal ORdst,ORindsrc,ORinddst,ORresult,OR2op,OR1opjmp,E : std_logic;
   signal temp : std_logic_vector(7 downto 0);
   signal MAR1 : std_logic_vector(7 downto 0);
   signal MAR2 : std_logic_vector(7 downto 0);
@@ -48,6 +48,7 @@ Architecture arch_Decoding_Circuit of Decoding_Circuit is
     ORinddst <= temp(3);
     ORresult <= temp(4);
     OR2op <= temp(5);
+    OR1opjmp <= temp(6);
 
     bit_Oring : Oring port map(IR,Next_Add,ORdst,ORindsrc,ORinddst,ORresult,OR2op,MAR1);
     pla_c : Pla_Circuit port map(IR,Pla,MAR2);

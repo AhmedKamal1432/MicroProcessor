@@ -85,7 +85,10 @@ class ToRom{
       mp["srcout"] = MP(8,"1000");
       mp["dstout"] = MP(8,"1001");
       mp["tmpout"]   = MP(8,"1010");
+      //our for ir out 
       mp["addressout"]= MP(8,"1011");
+      // for R2 out
+      mp["spout"]= MP(8,"1100");
 
       // F2 3 bit at 12 -> 14
       mp["pcin"]   = MP(12,"001");
@@ -93,9 +96,11 @@ class ToRom{
       mp["zin"]    = MP(12,"011");
       mp["rsrcin"]   = MP(12,"100");
       mp["rdstin"]   = MP(12,"101");
+      // R2 in (stack pointer)
+      mp["spin"]   = MP(12,"110");
 
       // F3 2 bit  at 15 -> 16
-      mp["marin"]   = MP(15,"01");
+      mp["marin"]   = MP(15," 01");
       mp["mdrin"]   = MP(15,"10");
       mp["tmpin"]  = MP(15,"11");
 
@@ -129,6 +134,8 @@ class ToRom{
       mp["orresult"]   = MP(28,"100");
       //owrs
       mp["or2op"]       = MP(28,"101");
+      // for on operand
+      mp["OR1opjmp"] = MP(28,"110");
 
       //f11 PLA 1bit 31
       mp["plaout"]   = MP(31,"1");

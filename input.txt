@@ -16,6 +16,7 @@
 040 : 041 alu(0111),Zin
 041 : 042 Zout,Yin
 042 : 274 TMPout,alu(0100),Zin,FLAGS_E,ORresult
+
 101 : 201 Rsrcout,SRCin,ORdst
 111 : 112 Rsrcout,MARin,RD
 112 : 171 
@@ -31,8 +32,8 @@
 164 : 165 Rsrcout,alu(0001),Zin
 165 : 166 Zout,MARin,RD
 166 : 170 ORindsrc
-170 : 006 MDRout,MARin,RD
-006 : 171 
+170 : 202 MDRout,MARin,RD
+202 : 171 
 171 : 201 MDRout,SRCin,ORdst
 201 : 020 Rdstout,Yin,OR2op
 211 : 212 Rdstout,MARin,RD
@@ -49,9 +50,47 @@
 264 : 265 Rdstout,alu(0001),Zin
 265 : 266 Zout,MARin,RD
 266 : 270 ORinddst
-270 : 007 MDRout,MARin,RD
-007 : 271 
+270 : 203 MDRout,MARin,RD
+203 : 271 
 271 : 020 MDRout,Yin,OR2op           
 274 : 000 Zout,MDRin,WR
 275 : 000 Zout,Rdstin
 
+060 : 064 Or1OpJmp
+063 : 006 Or1OpJmp
+064 : 274 alu(0000),Zin,Setc,FLAGS_E,ORresult
+065 : 066 alu(0000),Zin
+066 : 000 Zout,Pcin
+
+006 : 274 alu(0011),zin,FLAGS_E,ORresult
+007 : 274 alu(0011),Zin,Setc,FLAGS_E,ORresult
+
+067 : 274 alu(0111),Zin,FLAGS_E,ORresult
+070 : 274 alu(1000),Zin,FLAGS_E,ORresult
+071 : 274 alu(1001),Zin,FLAGS_E,ORresult
+072 : 274 alu(1010),Zin,FLAGS_E,ORresult
+073 : 274 alu(1011),Zin,FLAGS_E,ORresult
+074 : 274 alu(1100),Zin,FLAGS_E,ORresult
+075 : 274 alu(1101),Zin,FLAGS_E,ORresult
+076 : 274 alu(1110),Zin,FLAGS_E,ORresult
+077 : 274 alu(1111),Zin,FLAGS_E,ORresult
+
+214 : 215 PCout,Yin
+215 : 216 Addressout,alu(0001),Zin
+216 : 000 Zout,PCin
+
+010 : 011 alu(0000),Zin
+011 : 012 Zout,TMPin
+012 : 013 SPout,yin
+013 : 014 alu(0011),Zin
+014 : 015 Zout,SPin,MARin
+015 : 016 rSRCout,MDRin,WR
+016 : 017 PCout,rSRCin
+017 : 000 Tmpout,PCin
+
+113 : 114 rSRCout,PCin
+114 : 115 SPout,MARin,RD,yin
+115 : 116 alu(0000),SetC,Zin
+116 : 117 MDRout,rSRCin
+117 : 000 Zout,SPin
+ 

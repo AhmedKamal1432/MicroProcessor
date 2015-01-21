@@ -321,7 +321,7 @@ R11
 !s100 oC^E`TO9njdkf2>2[^GWR1
 !i10b 1
 Edecoding_circuit
-Z61 w1418338489
+Z61 w1419619676
 R1
 R2
 R3
@@ -332,7 +332,7 @@ L4
 VaVEZA`[OaEP4<C4^3JMRU3
 R6
 32
-Z64 !s108 1418419628.906096
+Z64 !s108 1419620311.669520
 Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
 Z66 !s107 /home/ahmed/MicroProcessor/Decoding_Circuit.vhd|
 R10
@@ -345,7 +345,7 @@ R2
 DEx4 work 16 decoding_circuit 0 22 aVEZA`[OaEP4<C4^3JMRU3
 l43
 L14
-V_0=_A5NI20O]E_J06hk@X0
+VVl1AQ;o4DWk5mh3][CS930
 R6
 32
 R64
@@ -353,7 +353,7 @@ R65
 R66
 R10
 R11
-!s100 N_<7MUSM>A=Y_V;0?7nHh0
+!s100 YE`Y]di]LQ9LSE6OZM^1G3
 !i10b 1
 Emux4
 Z67 w1418318471
@@ -706,7 +706,7 @@ R11
 !s100 R_ImdK^2W=5CE4S9W2z_W3
 !i10b 1
 Eoring
-Z127 w1418339793
+Z127 w1419620260
 R1
 R2
 R3
@@ -714,23 +714,23 @@ Z128 8/home/ahmed/MicroProcessor/Oring.vhd
 Z129 F/home/ahmed/MicroProcessor/Oring.vhd
 l0
 L4
-V4SX6odBbh9zGbW_24fc_>1
+VFEfcUfoeAIk4IjZN=RRED0
 R6
 32
-Z130 !s108 1418419628.986881
+Z130 !s108 1419620311.930778
 Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Oring.vhd|
 Z132 !s107 /home/ahmed/MicroProcessor/Oring.vhd|
 R10
 R11
-!s100 K^jmk5U`U41M2QGL=IHIX0
+!s100 AL:UQJ0f^oPTaM;X><A>a2
 !i10b 1
 Aa_oring
 R1
 R2
-DEx4 work 5 oring 0 22 4SX6odBbh9zGbW_24fc_>1
-l14
+DEx4 work 5 oring 0 22 FEfcUfoeAIk4IjZN=RRED0
+l16
 L12
-VWdVR2TjcA;czdHI0lGdMB0
+V^Q@hT?H94k>6HCVi4?Ihk3
 R6
 32
 R130
@@ -738,10 +738,10 @@ R131
 R132
 R10
 R11
-!s100 PD_D4PKo;`:L;7X5HIM8z3
+!s100 aza@`P2gdNAU=hNJ:5L@I2
 !i10b 1
 Epla_circuit
-Z133 w1418419620
+Z133 w1419623819
 R1
 R2
 R3
@@ -750,68 +750,68 @@ Z135 F/home/ahmed/MicroProcessor/Pla_Circuit.vhd
 l0
 L4
 VUQc2zk`Tn^SzR855Og9WC1
+!s100 UE4`X@MC90@FeZ2hzE2b^2
 R6
 32
-Z136 !s108 1418419629.023841
+!i10b 1
+Z136 !s108 1419623825.772420
 Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/Pla_Circuit.vhd|
 Z138 !s107 /home/ahmed/MicroProcessor/Pla_Circuit.vhd|
 R10
 R11
-!s100 UE4`X@MC90@FeZ2hzE2b^2
-!i10b 1
 Aa_pla_circuit
 R1
 R2
-DEx4 work 11 pla_circuit 0 22 UQc2zk`Tn^SzR855Og9WC1
+Z139 DEx4 work 11 pla_circuit 0 22 UQc2zk`Tn^SzR855Og9WC1
 l16
 L11
-VLHA:^8b0I]SGQK0kYDH=V3
+VlK]3:QKTJ[gH]PJH?CTXS2
+!s100 mPH2XS5_;]IhE]Z:UMl@k3
 R6
 32
+!i10b 1
 R136
 R137
 R138
 R10
 R11
-!s100 O[n7bY^O^o;X?aEFONH]V0
-!i10b 1
 Eram
-Z139 w1418421116
+Z140 w1418421116
 R31
 R1
 R2
 R3
-Z140 8/home/ahmed/MicroProcessor/ram.vhd
-Z141 F/home/ahmed/MicroProcessor/ram.vhd
+Z141 8/home/ahmed/MicroProcessor/ram.vhd
+Z142 F/home/ahmed/MicroProcessor/ram.vhd
 l0
 L6
 VMbY>j[X<Sa1GSM[nC[4Ra0
-!s100 oA:n@aiVOjfDg]Zm<SPL>2
 R6
 32
-!i10b 1
-Z142 !s108 1418421126.570824
-Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/ram.vhd|
-Z144 !s107 /home/ahmed/MicroProcessor/ram.vhd|
+Z143 !s108 1418421126.570824
+Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/ahmed/MicroProcessor/ram.vhd|
+Z145 !s107 /home/ahmed/MicroProcessor/ram.vhd|
 R10
 R11
+!s100 oA:n@aiVOjfDg]Zm<SPL>2
+!i10b 1
 Asyncrama
 R31
 R1
 R2
-Z145 DEx4 work 3 ram 0 22 MbY>j[X<Sa1GSM[nC[4Ra0
+DEx4 work 3 ram 0 22 MbY>j[X<Sa1GSM[nC[4Ra0
 l27
 L17
 VME6NdnkkoCc`@FVGoI4ez3
-!s100 QRQ?cmK8^L[lX0Gl:oaF81
 R6
 32
-!i10b 1
-R142
 R143
 R144
+R145
 R10
 R11
+!s100 QRQ?cmK8^L[lX0Gl:oaF81
+!i10b 1
 Etri_state_buffer
 Z146 w1415143072
 R1
