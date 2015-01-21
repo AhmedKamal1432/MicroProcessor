@@ -15,7 +15,10 @@ datain : in std_logic_vector(15 downto 0);
 dataout : out std_logic_vector(15 downto 0);
 MFC:out std_logic);
 end component;
-
+component my_reg is
+port( d,clk,rst,enable : in std_logic;
+q : out std_logic);
+end component;
 
 component my_nreg is
 Generic ( n : integer := 16);
@@ -47,8 +50,8 @@ component Control_Unit is
 	Rst :in std_logic;
     R0in,R1in,R2in,R3in,
     R0out,R1out,R2out,R3out,
-    PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout, --F1
-    PCin,IRin,Zin,RSRCin,RDSTin,                                   --F2
+    PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout,addressout, --F1
+    PCin,IRin,Zin,RSRCin,RDSTin,                                  --F2
     MARin,MDRin,TEMPin,                                            --F3
     Yin,SOURCEin,DESTINin,                                         --F4
     RD,WR,                                                    --F6
@@ -58,7 +61,8 @@ component Control_Unit is
     HLT                                                           --F9   
     :out std_logic;
     ALSU_SIGNALS:out std_logic_vector(3 downto 0);
-    CW : inout std_logic_vector(31 downto 0)                  --F5
+    CW : inout std_logic_vector(31 downto 0);                   --F5
+   FLAGS:in std_logic_vector(3 downto 0)	
   );
 end component;
 
@@ -68,7 +72,7 @@ signal IR:std_logic_vector(15 downto 0);
 
  signal R0in,R1in,R2in,R3in,
 		R0out,R1out,R2out,R3out,
-		PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout, 
+		PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout,addressout, 
 		PCin,IRin,Zin,RSRCin,RDSTin,                                   
 		MARin,MDRin,TEMPin,                                            
 		Yin,SOURCEin,DESTINin,                                         
@@ -83,14 +87,14 @@ signal  ALSU_SIGNALS:std_logic_vector(3 downto 0);	-- ALSU sellection line
 signal CW : std_logic_vector(31 downto 0);
 
 signal mdrINPUT,ramOUT,buss,AfromY,Z,ramIN,ADD:std_logic_vector(15 downto 0);
-signal R00out,R11out,R22out,R33out,Srcout,Destout,Tout,Z_value_out:std_logic_vector(15 downto 0);
+signal R00out,R11out,R22out,R33out,Srcout,Destout,Tout,Z_value_out,OFFSET,OFF_TMP1,OFF_TMP2:std_logic_vector(15 downto 0);
 signal Flags,True_flags:std_logic_vector(3 downto 0); 
-signal mdrENABLE,MFC,CLRY,TMP_MFC,TMPclk:std_logic;
+signal mdrENABLE,MFC,CLRY,TMP_MFC,TMPclk,OUT_HLT,IN_HLT:std_logic;
 --------------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-------------------------------
 begin
- TMPclk <= Clk when HLT ='0'
+ TMPclk <= Clk when OUT_HLT ='0'
    else '0';
-   
+   IN_HLT<='1';
   MFC<='0' when Rst='1'
   else TMP_MFC;
   CLRY<=CLEARY or Rst;
@@ -100,7 +104,7 @@ mdrENABLE<=MDRin or MFC;
 CU:Control_Unit port map(
 		IR,TMPclk,Rst,R0in,R1in,R2in,R3in,
 		R0out,R1out,R2out,R3out,
-		PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout, 
+		PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout,addressout,
 		PCin,IRin,Zin,RSRCin,RDSTin,                                   
 		MARin,MDRin,TEMPin,                                            
 		Yin,SOURCEin,DESTINin,                                         
@@ -108,9 +112,11 @@ CU:Control_Unit port map(
 		CLEARY,                                                        
 		CARRYin,                                                       
 		FLAGS_E,
-    HLT,      
+        HLT,      
 		ALSU_SIGNALS,
-    CW);
+        CW,
+	    True_Flags
+	);
 
 ---------------------------------------REGISTERS------------------------------------
 TriR0:tri_state_buffer generic map(16) port map(R0out,R00out,buss);
@@ -122,6 +128,11 @@ DEs:tri_state_buffer generic map(16) port map(DESTINout,Destout,buss);
 TEm:tri_state_buffer generic map(16) port map(TEMPout,Tout,buss);
 ZTri:tri_state_buffer generic map(16) port map(Zout,Z_value_out,buss);
 MDRTri:tri_state_buffer generic map(16) port map(MDRout,ramIN,buss);
+OFF_TMP1<=IR and "0000000011111111" ; --postive
+OFF_TMP2<=(IR and "0000000011111111") or  "1111111100000000" ; --negative
+OFFSET<= OFF_TMP2 when IR(7) = '1'
+else OFF_TMP1;
+IRoffset:tri_state_buffer generic map(16) port map(addressout,OFFSET,buss);
 
 ---------------------------------  General purpose Register ------------------
 R0:my_nreg generic map(16) port map(TMPclk,Rst,R0in,buss,R00out);
@@ -136,7 +147,7 @@ DESTIN:my_nreg generic map(16) port map(TMPclk,Rst,DESTINin,buss,Destout);
 tempREG:my_nreg generic map(16) port map(TMPclk,Rst,TEMPin,buss,Tout);
 Z_ALU : my_nreg generic map(16) port map(TMPclk,Rst,Zin,Z,Z_value_out);
 Flag_Reg:my_nreg generic map(4) port map(TMPclk,Rst,FLAGS_E,Flags,True_Flags);
-
+HLT_Reg:my_reg port map(IN_HLT,TMPclk,Rst,HLT,OUT_HLT);
 MDR:my_nreg generic map(16) port map(TMPclk,Rst,mdrENABLE,mdrINPUT,ramIN);
 MAR:my_nreg generic map(16) port map(TMPclk,Rst,MARin,buss,ADD);
 IRReg:my_nreg generic map(16) port map(TMPclk,Rst,IRin,buss,IR);

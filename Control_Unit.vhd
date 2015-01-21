@@ -8,7 +8,7 @@ entity Control_Unit is
 	Rst:in std_logic;
     R0in,R1in,R2in,R3in,
     R0out,R1out,R2out,R3out,
-    PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout, --F1
+    PCout,MDRout,Zout,RSRCout,RDSTout,SOURCEout,DESTINout,TEMPout,addressout, --F1
     PCin,IRin,Zin,RSRCin,RDSTin,                                   --F2
     MARin,MDRin,TEMPin,                                            --F3
     Yin,SOURCEin,DESTINin,                                         --F4
@@ -19,7 +19,8 @@ entity Control_Unit is
     HLT
     :out std_logic;
     ALSU_SIGNALS:out std_logic_vector(3 downto 0);                  --F5
-    CW : inout std_logic_vector(31 downto 0)
+    CW : inout std_logic_vector(31 downto 0);
+	FLAGS:in std_logic_vector(3 downto 0)
   );
 end Control_Unit;
 
@@ -27,18 +28,20 @@ Architecture Arch of Control_Unit is
 
 component Decoding_Circuit is
 port( 
-Next_Add : in std_logic_vector(7 downto 0);
-IR : in std_logic_vector(15 downto 0);
-Or_Bits : in std_logic_vector(2 downto 0);
-Pla: in std_logic ;
-MAR : out std_logic_vector(7 downto 0));
+  Next_Add : in std_logic_vector(7 downto 0);
+  IR : in std_logic_vector(15 downto 0);
+  Or_Bits : in std_logic_vector(2 downto 0);
+  Pla: in std_logic ;
+  MAR : out std_logic_vector(7 downto 0); 
+  FLAGS:in std_logic_vector(3 downto 0)
+  );
 end component;
 
 component Control_Store is
   port(
   Rst,CLK:in std_logic;
   Add:in std_logic_vector(7 downto 0);
-  Control_Word:out std_logic_vector(31 downto 0)
+  Control_Word:out std_logic_vector(31 downto 0) --;FLGs  
   );  
 end component;
 
@@ -66,8 +69,8 @@ end component;
 
 --signal CW:std_logic_vector(31 downto 0);
 signal uAR,uARtmp:std_logic_vector(7 downto 0);
-signal F1En:std_logic;
-signal F2En:std_logic;
+signal F1En,F2En:std_logic;
+--signal SPin,SPout:std_logic;
 signal F1Dout:std_logic_vector(15 downto 0);
 signal F2Dout:std_logic_vector(7 downto 0);
 signal EnRso :std_logic;
@@ -88,7 +91,7 @@ begin
   F1En<=not Rst;
   F2En<=not Rst;
   CS_Label:Control_Store port map(Rst,CLK,uARtmp,CW);
-  DC_Label:Decoding_Circuit port map(CW(31 downto 24),IR,CW(3 downto 1),CW(0),uAR);
+  DC_Label:Decoding_Circuit port map(CW(31 downto 24),IR,CW(3 downto 1),CW(0),uAR,FLAGS);
   DRout:my_4x16Decoder port map(cw(23),cw(22),cw(21),CW(20),F1En,F1Dout);  
   DRin:my_3x8Decoder port map(cw(19),cw(18),cw(17),F2En,F2Dout);
 ---------------------------------------F1 Part------------------------------------------  
@@ -100,6 +103,8 @@ begin
   SOURCEout<=F1Dout(8);
   DESTINout<=F1Dout(9);
   TEMPout<=F1Dout(10);
+  addressout<=F1Dout(11);
+  --SPout<=F1Dout(12);
   ---------------------------------------------------------------------------------------
   EnRso<=F1Dout(4)and not Rst;
   EnRdo<=F1Dout(5)and not Rst;
@@ -113,6 +118,7 @@ begin
   Zin<=F2Dout(3);
   RSRCin<=F2Dout(4);
   RDSTin<=F2Dout(5);
+ -- SPin<=F2Dout(6);
   ---------------------------------------------------------------------------------------
   
   Ddsti:my_2x4Decoder port map(IR(1),IR(0),EnRdi,DdstiOut); --Ri dest in
@@ -126,8 +132,8 @@ begin
   R1out<=DdstoOut(1) or DsrcoOut(1);
   R1in <=DdstiOut(1) or DsrciOut(1);
   
-  R2out<=DdstoOut(2) or DsrcoOut(2);
-  R2in <=DdstiOut(2) or DsrciOut(2);
+  R2out<=DdstoOut(2) or DsrcoOut(2) or F1Dout(12);
+  R2in <=DdstiOut(2) or DsrciOut(2) or F2Dout(6);
 
   R3out<=DdstoOut(3) or DsrcoOut(3) or F1Dout(1);
   

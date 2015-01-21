@@ -17,7 +17,7 @@ Architecture a_Oring of Oring is
     MAR(0) <= MAR_Old(0) or temp4 or temp5 or temp6 or fopMAR0 or opjmp or frts;
     MAR(1) <= MAR_Old(1) or fopMAR1 or frts;
     MAR(2) <= MAR_Old(2) or fopMAR2;
-    MAR(3) <= MAR_Old(3) or temp3 or fopMAR3 or fjsr;
+    MAR(3) <= MAR_Old(3) or temp3 or fopMAR3  or fjsr;
     MAR(4) <= MAR_Old(4) or temp2 or f21op;
     MAR(5) <= MAR_Old(5) or temp1 or f1op;
     MAR(6) <= MAR_Old(6) or frts;

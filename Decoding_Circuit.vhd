@@ -7,7 +7,8 @@ Entity Decoding_Circuit is
   IR : in std_logic_vector(15 downto 0);
   Or_Bits : in std_logic_vector(2 downto 0);
   Pla : in std_logic ;
-  MAR : out std_logic_vector(7 downto 0)
+  MAR : out std_logic_vector(7 downto 0); 
+  FLAGS:in std_logic_vector(3 downto 0)
   );
 end Decoding_Circuit;
 
@@ -29,7 +30,7 @@ Architecture arch_Decoding_Circuit of Decoding_Circuit is
     port(
     IR : in std_logic_vector(15 downto 0);
     MAR_Old : in std_logic_vector(7 downto 0);  
-    ORdst,ORindsrc,ORinddst,ORresult ,OR2op : in std_logic;
+    ORdst,ORindsrc,ORinddst,ORresult ,OR2op,OR1opjmp : in std_logic;
     MAR : out std_logic_vector(7 downto 0));
   end component;
   
@@ -37,7 +38,9 @@ Architecture arch_Decoding_Circuit of Decoding_Circuit is
     port(
     IR : in std_logic_vector(15 downto 0);
     E : in std_logic;
-    MAR : out std_logic_vector(7 downto 0));
+    MAR : out std_logic_vector(7 downto 0); 
+  FLAGS:in std_logic_vector(3 downto 0)
+  );
   end component;
 
   begin
@@ -50,8 +53,8 @@ Architecture arch_Decoding_Circuit of Decoding_Circuit is
     OR2op <= temp(5);
     OR1opjmp <= temp(6);
 
-    bit_Oring : Oring port map(IR,Next_Add,ORdst,ORindsrc,ORinddst,ORresult,OR2op,MAR1);
-    pla_c : Pla_Circuit port map(IR,Pla,MAR2);
+    bit_Oring : Oring port map(IR,Next_Add,ORdst,ORindsrc,ORinddst,ORresult,OR2op,OR1opjmp,MAR1);
+    pla_c : Pla_Circuit port map(IR,Pla,MAR2,FLAGS);
     MAR <= MAR1 or MAR2 ;  
 end arch_Decoding_Circuit;
 

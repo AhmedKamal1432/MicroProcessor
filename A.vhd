@@ -3,10 +3,9 @@ use ieee.std_logic_1164.all;
 entity A is
   port(aa,b :in std_logic_vector(15 downto 0);
         cin :in std_logic;
-        cout:out std_logic;
         s :in std_logic_vector(1 downto 0);
         f :out std_logic_vector(15 downto 0);
-        FLAGS:out std_logic_vector(3 downto 0)
+        FLAGSA:out std_logic_vector(3 downto 0)
         );
 end A;
 architecture arch10 of A is
@@ -32,12 +31,11 @@ end component;
  else tc;
   temp<= (others => '0')  when cin='1' and s(0)='1' and s(1) ='1' -- f<= (others => '0')
   else t;
-  cout<=tempc;
   f<=temp;
-  FLAGS(0)<= temp(15) xor (aa(15) xnor b(15));  
-  FLAGS(1)<=tempc;
-  FLAGS(2)<='1' when temp= "0000000000000000"
+  FLAGSA(0)<= temp(15) xor (aa(15) xnor invb(15));  
+  FLAGSA(1)<=tempc;
+  FLAGSA(2)<='1' when temp= "0000000000000000"
   else '0';
-  FLAGS(3)<=temp(15);
+  FLAGSA(3)<=temp(15);
   end arch10;
 

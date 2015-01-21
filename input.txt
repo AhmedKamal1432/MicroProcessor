@@ -35,7 +35,7 @@
 170 : 202 MDRout,MARin,RD
 202 : 171 
 171 : 201 MDRout,SRCin,ORdst
-201 : 020 Rdstout,Yin,OR2op
+201 : 000 Rdstout,Yin,OR2op
 211 : 212 Rdstout,MARin,RD
 212 : 271 
 221 : 222 Rdstout,MARin,RD,Setc,alu(0001),ClearY,Zin
@@ -52,7 +52,7 @@
 266 : 270 ORinddst
 270 : 203 MDRout,MARin,RD
 203 : 271 
-271 : 020 MDRout,Yin,OR2op           
+271 : 000 MDRout,Yin,OR2op           
 274 : 000 Zout,MDRin,WR
 275 : 000 Zout,Rdstin
 
